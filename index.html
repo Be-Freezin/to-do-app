@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <script
+      src="https://kit.fontawesome.com/b7277f64eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="main-content-container">
+      <div class="main-wrapper">
+        <section class="task-input">
+          <input
+            id="inputEl"
+            class="input-field"
+            type="text"
+            placeholder="What do you want to do?"
+          />
+          <button class="submit-btn" id="btn-el">
+            <i class="fa-solid fa-check"></i>
+          </button>
+        </section>
+
+        <h4 class="task-header">Tasks:</h4>
+
+        <section class="list-container">
+          <ol id="list" class="list"></ol>
+        </section>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>

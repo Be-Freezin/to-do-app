@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: #1e575073;
+}
+
+.main-content-container {
+  margin-top: 50px;
+}
+
+.main-wrapper {
+  width: 800px;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #f0ead2;
+  box-shadow: 5px 5px 5px #264653;
+}
+
+.input-field {
+  margin-top: 100px;
+  width: 300px;
+  padding: 8px;
+  border: 1px solid #264653;
+  background-color: #2a9d9091;
+  color: #264653;
+  font-size: 1.2rem;
+}
+
+.task-header {
+  font-size: 2rem;
+  color: #264653;
+  padding: 10px;
+}
+
+.list-container {
+  width: 800px;
+  min-height: 400px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  list-style: circle;
+  width: 700px;
+  display: block;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+
+  overflow: hidden;
+}
+li {
+  padding: 10px;
+  font-size: 1.5rem;
+  color: #1e5750;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* BUTTON */
+
+.submit-btn,
+#delete-btn {
+  padding: 10px 24px;
+  width: 100px;
+  text-decoration: none;
+  border: none;
+  background-color: #264653;
+  cursor: pointer;
+  transition: all 0.35s;
+  text-align: center;
+  position: relative;
+}
+
+.fa-solid:before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-size: 1.1rem;
+  color: #f0ead2;
+  position: relative;
+  z-index: 2;
+}
+.fa-solid:before:hover {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+
+  transition: all 0.35s;
+}
+
+.submit-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #2a9d8f;
+  transition: all 0.35s;
+}
+.submit-btn:hover {
+  color: #fff;
+}
+
+.submit-btn:hover:after {
+  width: 100%;
+}
+
+#delete-btn {
+  color: #f0ead2;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .main-wrapper {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .list {
+    width: 350px;
+  }
+
+  .list-container {
+    width: 350px;
+  }
+
+  .submit-btn {
+    margin-top: 10px;
+  }
+}
